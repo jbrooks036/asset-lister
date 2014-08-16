@@ -1,20 +1,30 @@
 {
   "_id":{"$oid":"000000000000000000000001"},
   "name":"Bob Jones",
-  "age":25,
-  "money":12834.45,
-  "birthday":{"$date":477295200000},
   "photo":"http://images.com/bob.jpg",
-  "isEmployed":true,
-  "atomsInBody":7600500400300200100,
-  "spouse":{"name":"Janet", "age":21},
-  "things":["blue", 3, 3.14, true, null, {"a":7}, [3,5,7]],
-  "address":{"$undefined":true},
-  "resume":null,
-  "employeeId":{"$oid":"000000000000000000000002"}
-}
-{
-  "_id":{"$oid":"000000000000000000000003"},
-  "name":"Jane Marsh"
+  "cash":12834.45,
+  "assets":[{"name":"jet", "photo":"http://www.orientskys.com/images/private-jet-Asia.jpg", "count":1, "valEach":500000},
+            {"name":"summer cottage", "photo":"http://www.photo-dictionary.com/photofiles/list/9452/12852summer_cottage.jpg", "count":1, "valEach":120000},
+            {"name":"car", "photo":"http://www.extremetech.com/wp-content/uploads/2012/12/Audi-A1.jpg", "count":2, "valEach":25000}]
+
 }
 
+{
+  "_id":{"$oid":"000000000000000000000002"},
+  "name":"Emma Peel",
+  "photo":"http://flapperscomedy.com/med/jules_headshot_2013.jpg",
+  "cash":12834.45,
+  "assets":[{"name":"ring", "photo":"http://www.yankodesign.com/images/design_news/2006/03/20/killer_ring.jpg", "count":3, "valEach":5000},
+            {"name":"house", "photo":"http://msa.maryland.gov/msa/homepage/html/i000669a.gif","count":1,  "valEach":500000},
+            {"name":"car", "photo":"http://www.extremetech.com/wp-content/uploads/2012/12/Audi-A1.jpg","count":1,  "valEach":25000}]
+}
+
+{
+  "_id":{"$oid":"000000000000000000000003"},
+  "name":"Kenny Rogers",
+  "photo": "http://d3ew4rh7xxgmkq.cloudfront.net/performer/57730/photos/57730-fdad60ed3fe1409e89596d9ab12ee42b-1.jpg",
+  "cash":12834.45,
+  "assets":[{"name":"ring", "photo":"http://www.yankodesign.com/images/design_news/2006/03/20/killer_ring.jpg", "count":2, "valEach":5000},
+            {"name":"tv", "photo":"http://www.livestream.com/filestore/logos/8ad52e3b-c2cc-74a7-0774-1cb6998cab01-banner.jpg", "count":2, "valEach":1500},
+            {"name":"yacht", "photo":"http://www.activeautoinsurance.com/wp-content/uploads/2014/07/boat-3.jpg", "count":1, "valEach": 140000}]
+}
