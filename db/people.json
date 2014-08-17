@@ -2,7 +2,7 @@
   "_id":{"$oid":"000000000000000000000001"},
   "name":"Bob Jones",
   "photo":"http://images.com/bob.jpg",
-  "cash":12834.45,
+  "cash":30000.00,
   "assets":[{"name":"jet", "photo":"http://www.orientskys.com/images/private-jet-Asia.jpg", "count":1, "valEach":500000},
             {"name":"summer cottage", "photo":"http://www.photo-dictionary.com/photofiles/list/9452/12852summer_cottage.jpg", "count":1, "valEach":120000},
             {"name":"car", "photo":"http://www.extremetech.com/wp-content/uploads/2012/12/Audi-A1.jpg", "count":2, "valEach":25000}]

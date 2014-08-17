@@ -1,5 +1,10 @@
 extends ../shared/template
 block content
   h2 Add New Person!
+  a(href='/people')
+    button Add Person 
 
+  form(method='post', actions='/people')
+    input(name='name', type='text', placeholder='Jane Doe', autofocus=true)
+    button Add Person
 
