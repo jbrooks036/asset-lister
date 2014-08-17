@@ -25,8 +25,8 @@ describe('Person', function(){
 
   describe('constructor', function(){
     it('should create a new Person object', function(){
-      var o = {name:'Betty Boop', cash:'3000'};
-      var p = new Person(o);
+      var o = {name:'Betty Boop', cash:'3000'},
+          p = new Person(o);
       expect(p).to.be.instanceof(Person);
       expect(p.name).to.equal('Betty Boop');
       expect(p.cash).to.equal(3000);
@@ -35,8 +35,8 @@ describe('Person', function(){
 
   describe('#save', function(){
     it('should save a person to the database', function(done){
-      var o = {name:'Betty Boop', cash:'3000'};
-      var p = new Person(o);
+      var o = {name:'Betty Boop', cash:'3000'},
+          p = new Person(o);
       p.save(function(){
         expect(p._id).to.be.instanceof(Mongo.ObjectID);
         done();

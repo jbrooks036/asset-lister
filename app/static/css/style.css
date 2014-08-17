@@ -2,11 +2,35 @@
 
 *{
   font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+table{
+  padding: 0px;
+  border-spacing: 0px;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  border: 1px solid #aaaaaa;
+  font-size: 11px;
+}
+
+table thead{
+  background-color: #aaaaaa;
   font-size: 13px;
+  letter-spacing: 1px;
 }
 
-body{
-  background-image: url(/img/node.png);
-  background-size: cover;
+table td{
+  padding: 5px;
+  border: 1px solid #aaaaaa;
 }
 
+a{
+  color: #85144B;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #001F3F;
+  text-decoration: underline;
+}

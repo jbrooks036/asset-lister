@@ -15,8 +15,8 @@ module.exports = function(app, express){
   app.get('/', home.index);
   app.get('/people/new', people.init);
   app.get('/people', people.index);
-  // app.post('/people', people.create);
-  // app.get('/people/:id', people.show);
+  app.post('/people/new', people.create);
+  app.get('/people/:id', people.show);
   // app.delete('/people/:id', people.destroy);
 
   console.log('Routes Loaded');
