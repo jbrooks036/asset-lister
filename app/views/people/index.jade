@@ -2,3 +2,13 @@ extends ../shared/template
 block content
   h2 People!
 
+  table#people
+    thead
+      tr
+        th Name
+        th Cash
+    tbody
+      each person in people
+        tr
+          td: a(href='/people/#{person._id}')=person.name
+          td=person.cash

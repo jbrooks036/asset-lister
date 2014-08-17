@@ -6,6 +6,8 @@ var _     = require('lodash'),
 function Person(o){
   this.name = o.name;
   this.cash = o.cash * 1;
+  console.log('p constructor this');
+  console.log(this);
 }
 
 Object.defineProperty(Person, 'collection', {
@@ -49,4 +51,4 @@ module.exports = Person;
 function rePrototype(obj){
   var p = _.create(Person.prototype, obj);
   return p;
-};
+}
