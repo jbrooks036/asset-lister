@@ -6,8 +6,8 @@ var _     = require('lodash'),
 function Person(o){
   this.name = o.name;
   this.cash = o.cash * 1;
-  console.log('p constructor this');
-  console.log(this);
+  // console.log('p constructor this');
+  // console.log(this);
 }
 
 Object.defineProperty(Person, 'collection', {
@@ -29,6 +29,7 @@ Person.all = function(cb){
 };
 
 Person.findById = function(id, cb){
+  console.log(id);
   var _id = Mongo.ObjectID(id);
 
   Person.collection.findOne({_id:_id}, function(err, obj){
