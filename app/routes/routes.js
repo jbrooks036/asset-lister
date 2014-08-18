@@ -14,9 +14,11 @@ module.exports = function(app, express){
 
   app.get('/', home.index);
   app.get('/people/new', people.init);
-  app.get('/people', people.index);
   app.post('/people/new', people.create);
+  app.get('/people', people.index);
   app.get('/people/:id', people.show);
+  app.get('/people/:id/assets/new', people.newAsset);
+  app.post('/people/:id/assets', people.createAsset);
   // app.delete('/people/:id', people.destroy);
 
   console.log('Routes Loaded');

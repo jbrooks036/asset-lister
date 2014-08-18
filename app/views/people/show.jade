@@ -3,5 +3,10 @@ extends ../shared/template
 block content
   h2= person.name
 
-  a(href='/people/show')
-    button Add Item 
+  ul
+    li= person._id
+    li= person.name
+    li= person.cash
+
+  a(href='/people/#{person._id}/assets/new') New Asset
+

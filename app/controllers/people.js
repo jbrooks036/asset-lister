@@ -21,7 +21,19 @@ exports.index = function(req, res){
 };
 
 exports.show = function(req, res){
+  console.log(req.params);
   Person.findById(req.params.id, function(person){
     res.render('people/show', {person:person});
   });
 };
+
+exports.newAsset = function(req, res){
+  res.render('people/newAsset', {id:req.params.id});
+};
+
+exports.createAsset = function(req, res){
+  console.log('controller - exports.createAsset; req.params = ');
+  console.log(req.params);
+  console.log(req.body);
+};
+

@@ -1,0 +1,9 @@
+extends ../shared/template
+block content
+  h2 Add New Asset
+
+  form(method='post', action='/people/#{id}/assets')
+    input(name='name', type='text', placeholder='couch', autofocus=true)
+    input(name='value', type='number', placeholder='500')
+    button Add Asset
+
